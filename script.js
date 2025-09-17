@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const scrollBtn = document.getElementById('scroll-down-btn');
     const projectsSection = document.getElementById('projects-section');
 
+
+
         // Crear estrellas
         const numStars = 100;
         for (let i = 0; i < numStars; i++) {
