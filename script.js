@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
         // Nueva: Animación de entrada para la sección de contacto
-    gsap.fromTo('#contact-section .section-title', { opacity: 0, y: 50 }, {
+    gsap.fromTo('#contact-section', { opacity: 0, y: 50 }, {
         opacity: 1, y: 0, duration: 1, ease: 'power2.out',
         scrollTrigger: {
             trigger: '#contact-section',
