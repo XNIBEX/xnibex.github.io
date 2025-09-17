@@ -199,6 +199,13 @@ body {
     border: 1px solid rgba(255,255,255,0.3);
   }
   
+  .tech-stack span:hover{
+    transform: scale(1.05);
+  }
+
+  .project-tools span:hover{
+    transform: scale(1.05);
+  }
   
   /* Botones alineados */
 .actions {
@@ -345,4 +352,38 @@ body {
 
 .carousel-btn.next-btn {
     right: 10px;
+}
+
+
+#contact-section {
+  position: relative;
+  z-index: 3;
+  padding: 100px 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 40px;
+}
+
+.contact-icon-link {
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.contact-icon-link:hover {
+  transform: scale(1.1);
+}
+
+.contact-icon {
+  width: 200px;
+  height: 200px;
 }
