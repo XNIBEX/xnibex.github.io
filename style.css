@@ -137,4 +137,163 @@ body {
     margin-left: 1px;
     margin-bottom: 10px;
   }
+
+  /* Foto a la derecha, texto rodeando */
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    float: right;
+    shape-outside: circle();
+    -webkit-shape-outside: circle();
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Botón cuadrado con icono */
+  .btn-square {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 18px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px; /* Más cuadrado */
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+  .btn-square:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: #fff;
+  }
+  .btn-square img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Contenedor del botón debajo de la foto */
+  .profile-actions {
+    clear: both;
+    text-align: right; /* Alineado con la foto */
+    margin-top: 10px;
+  }
+  
+  /* Tecnologías (chips) */
+  .tech-stack {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .tech-stack span {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(255,255,255,0.3);
+  }
+  
+  
+  /* Botones alineados */
+.actions {
+  margin-top: 30px;
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Botones cuadrados */
+.btn-square {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 18px;
+  margin-right: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+.btn-square:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: #fff;
+  transform: translateY(-3px);
+}
+
+
+
+.projects {
+    padding: 80px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+  
+  .project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  
+  .project-text {
+    flex: 1;
+    color: #fff;
+  }
+  .project-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .project-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  /* Carrusel */
+  .carousel {
+    flex: 1;
+    position: relative;
+    max-width: 450px;
+    overflow: hidden;
+  }
+  .carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .carousel-images img {
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 10px;
+  }
+  
+  /* Flechas */
+  .carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .carousel .prev { left: 10px; }
+  .carousel .next { right: 10px; }
+  .carousel button:hover { background: rgba(255,255,255,0.3); }
   

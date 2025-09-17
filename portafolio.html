@@ -10,6 +10,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script defer src="script.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script> 
 </head>
 <body>
   <div class="background-gradient"></div>
@@ -24,13 +25,47 @@
   <div class="content">
     <div class="about-me-content">
       <img src="Fotoperfil_barraza.jpg" alt="Tu Foto" class="profile-pic">
+  
       <h1>Hola, soy Nicolas.</h1>
-      <h2>Titulado en Ingenieria Civil en Informatica</h2>
-      <p>Tengo experiencia en desarrollo de plataformas web para analisis y gestión de datos, e integración de hardware.</p>
+      <h2>Titulado en Ingeniería Civil en Informática</h2>
+      <p>
+        Tengo experiencia en desarrollo de plataformas web para análisis y gestión de datos, 
+        e integración de hardware.
+      </p>
+  
+      <!-- Tecnologías -->
+      <div class="tech-stack">
+        <span>Django</span>
+        <span>Node.js</span>
+        <span>React</span>
+        <span>PostgreSQL</span>
+        <span>MongoDB</span>
+        <span>Docker</span>
+        <span>AWS</span>
+      </div>
+      
     </div>
+  
+    <!-- Botón debajo de la foto -->
+    <div class="actions">
+        <a href="Barraza_Nicolas_CV.docx.pdf" download class="btn-square" target="_blank">
+          📄 Descargar CV
+        </a>
+        <button id="scroll-down-btn" class="btn-square">
+          🚀 Proyectos
+        </button>
+        <a href="https://github.com/XNIBEX" target="_blank" class="btn-square">
+          💻 GitHub
+        </a>
+      </div>
 
-    <a href="ruta/a/tu/cv.pdf" download class="btn" id="download-cv-btn">Descargar CV</a>
-    <button id="scroll-down-btn" class="btn">Ver Proyectos</button>
+    
   </div>
+
+  
+  
+
+  
 </body>
 </html>
+

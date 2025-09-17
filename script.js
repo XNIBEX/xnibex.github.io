@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
     gsap.fromTo('.content h1', { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1, ease: 'power2.out', delay: 1.2 });
     gsap.fromTo('.content h2', { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1, ease: 'power2.out', delay: 1.4 });
     gsap.fromTo('.content p', { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1, ease: 'power2.out', delay: 1.6 });
-    gsap.fromTo('#download-cv-btn', { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1, ease: 'power2.out', delay: 2 });
-    gsap.fromTo('#scroll-down-btn', { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1, ease: 'power2.out', delay: 2.2 });
+    gsap.fromTo('.content .tech-stack', { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1, ease: 'power2.out', delay: 1.8 });
+    gsap.fromTo('.btn-square', { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1, ease: 'power2.out', delay: 2 });
   
     // Crear estrellas
     const numStars = 100;
@@ -50,5 +50,11 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollBtn.addEventListener('click', () => {
       gsap.to(window, { duration: 1.5, scrollTo: { y: projectsSection, offsetY: 0 }, ease: "power2.inOut" });
     });
+
+    
   });
+  
+  
+
+
   
