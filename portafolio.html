@@ -1,114 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
-    <script defer src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script defer src="script.js"></script>
 </head>
 <body>
-    <div class="background-gradient"></div>
-    <div class="stars"></div>
+  <div class="background-gradient"></div>
+  <div class="stars"></div>
 
-    <div class="content">
-        <h1>Tu Nombre</h1>
-        <p>Tu Descripción o Profesión</p>
+  <nav class="navbar">
+    <a href="#about-me-section" class="nav-link">Sobre Mí</a>
+    <a href="#projects-section" class="nav-link">Proyectos</a>
+    <a href="#contact-section" class="nav-link">Contacto</a>
+  </nav>
 
-        <a href="ruta/a/tu/cv.pdf" download class="btn" id="download-cv-btn">Descargar CV</a>
-
-        <h2>Herramientas destacas</h2>
-        <div class="tech-icons">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Django_logo.svg" alt="Django" class="tech-icon0">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" class="tech-icon1">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js" class="tech-icon2">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg" alt="PostgreSQL" class="tech-icon3">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" alt="MongoDB" class="tech-icon4">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg" alt="Docker" class="tech-icon5">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS" class="tech-icon6">
-        </div>
-
-        <button id="scroll-down-btn" class="btn">Ver Proyectos</button>
+  <div class="content">
+    <div class="about-me-content">
+      <img src="Fotoperfil_barraza.jpg" alt="Tu Foto" class="profile-pic">
+      <h1>Hola, soy Nicolas.</h1>
+      <h2>Titulado en Ingenieria Civil en Informatica</h2>
+      <p>Tengo experiencia en desarrollo de plataformas web para analisis y gestión de datos, e integración de hardware.</p>
     </div>
 
-    <div id="projects-section">
-        <h2 class="projects-title">Mis Proyectos</h2>
-
-        <article class="project">
-            <div class="project-info">
-                <h3>Sistema Accesible de Dosimetría Vocal y Monitorización Ambiental para la Prevención de Trastornos de la Voz en Docentes</h3>
-                <p>Una breve descripción de tu primer proyecto. Menciona el problema que resolviste y las funcionalidades clave.</p>
-                <div class="project-tools">
-                    <span>Django</span> <span>React</span> <span>PostgreSQL</span>
-                </div>
-            </div>
-            <div class="carousel-container">
-                <div class="carousel-track">
-                    <img src="https://via.placeholder.com/600x400/0000FF/FFFFFF?text=Imagen+1.1" alt="Imagen del proyecto 1.1">
-                    <img src="https://via.placeholder.com/600x400/0000FF/FFFFFF?text=Imagen+1.2" alt="Imagen del proyecto 1.2">
-                    <img src="https://via.placeholder.com/600x400/0000FF/FFFFFF?text=Imagen+1.3" alt="Imagen del proyecto 1.3">
-                </div>
-                <button class="carousel-btn prev-btn">‹</button>
-                <button class="carousel-btn next-btn">›</button>
-            </div>
-        </article>
-
-        <article class="project">
-            <div class="project-info">
-                <h3>Nombre del Proyecto 2</h3>
-                <p>Descripción del segundo proyecto.</p>
-                <div class="project-tools">
-                    <span>Node.js</span> <span>MongoDB</span> <span>Docker</span>
-                </div>
-            </div>
-            <div class="carousel-container">
-                <div class="carousel-track">
-                    <img src="https://via.placeholder.com/600x400/FF0000/FFFFFF?text=Imagen+2.1" alt="Imagen del proyecto 2.1">
-                    <img src="https://via.placeholder.com/600x400/FF0000/FFFFFF?text=Imagen+2.2" alt="Imagen del proyecto 2.2">
-                </div>
-                <button class="carousel-btn prev-btn">‹</button>
-                <button class="carousel-btn next-btn">›</button>
-            </div>
-        </article>
-        
-        <article class="project">
-            <div class="project-info">
-                <h3>Nombre del Proyecto 3</h3>
-                <p>Descripción del tercer proyecto.</p>
-                <div class="project-tools">
-                    <span>React</span> <span>AWS</span> <span>Node.js</span>
-                </div>
-            </div>
-            <div class="carousel-container">
-                <div class="carousel-track">
-                    <img src="https://via.placeholder.com/600x400/FFFF00/000000?text=Imagen+3.1" alt="Imagen del proyecto 3.1">
-                    <img src="https://via.placeholder.com/600x400/FFFF00/000000?text=Imagen+3.2" alt="Imagen del proyecto 3.2">
-                </div>
-                <button class="carousel-btn prev-btn">‹</button>
-                <button class="carousel-btn next-btn">›</button>
-            </div>
-        </article>
-
-        <article class="project">
-            <div class="project-info">
-                <h3>Nombre del Proyecto 4</h3>
-                <p>Descripción del cuarto proyecto.</p>
-                <div class="project-tools">
-                    <span>Docker</span> <span>Django</span>
-                </div>
-            </div>
-            <div class="carousel-container">
-                <div class="carousel-track">
-                    <img src="https://via.placeholder.com/600x400/00FF00/000000?text=Imagen+4.1" alt="Imagen del proyecto 4.1">
-                    <img src="https://via.placeholder.com/600x400/00FF00/000000?text=Imagen+4.2" alt="Imagen del proyecto 4.2">
-                </div>
-                <button class="carousel-btn prev-btn">‹</button>
-                <button class="carousel-btn next-btn">›</button>
-            </div>
-        </article>
-
-    </div>
+    <a href="ruta/a/tu/cv.pdf" download class="btn" id="download-cv-btn">Descargar CV</a>
+    <button id="scroll-down-btn" class="btn">Ver Proyectos</button>
+  </div>
 </body>
 </html>
