@@ -68,15 +68,21 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-        // Animación de entrada de la sección "Sobre Mí" con GSAP
-        gsap.fromTo('.about-me-section .container > *', { opacity: 0, y: 50 }, {
-            opacity: 1,
-            y: 0,
-            duration: 1,
-            ease: 'power2.out',
-            stagger: 0.2, // Aplica el efecto escalonado a cada elemento hijo
-            delay: 1.2
-        });
+     // Crear una línea de tiempo GSAP para la animación de inicio
+     const tl = gsap.timeline({ defaults: { duration: 1, ease: "power2.out" } });
+
+     // Animación de la foto de perfil (aparece primero)
+     tl.fromTo(".intro-block", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1.5 });
+ 
+     // Animación del título y descripción
+     tl.fromTo(".profile-pic", { opacity: 0, y: 50 }, { opacity: 1, y: 0 }, "-=0.9"); // Se anima 0.8s antes de que la anterior termine
+ 
+     // Animación del bloque de tecnologías
+     tl.fromTo(".tech-block", { opacity: 0, y: 50 }, { opacity: 1, y: 0 }, "-=0.5");
+ 
+     // Animación del bloque de botones
+     tl.fromTo(".buttons-block", { opacity: 0, y: 50 }, { opacity: 1, y: 0 }, "-=0.5");
+ 
 
         // Animación de entrada para los títulos de sección
         gsap.utils.toArray(".section-title").forEach(title => {

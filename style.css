@@ -5,6 +5,17 @@ body {
   position: relative; /* Necesario para que el fondo se posicione bien */
 }
 
+/* ... Tus otros estilos ... */
+
+/* Oculta los elementos de la sección de Sobre Mí al cargar la página */
+/* Oculta los elementos de la sección de Sobre Mí al cargar la página */
+/* ... Tus otros estilos ... */
+
+/* Oculta los bloques de contenido para que puedan ser animados */
+.content-block, .profile-pic {
+  opacity: 0;
+}
+
 /* El fondo estrellado y el gradiente se mantienen con su lógica GSAP */
 .background-gradient {
   position: fixed;
@@ -82,3 +93,4 @@ body {
   height: 80px;
    /* Para que los logos se vean blancos en el fondo oscuro */
 }
+
