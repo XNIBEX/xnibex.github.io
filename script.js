@@ -23,15 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ease: "power1.inOut"
     });
 
-    // Animación de entrada de la sección "Sobre Mí" con GSAP
-    gsap.fromTo('.about-me-section .container > *', { opacity: 0, y: 50 }, {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        ease: 'power2.out',
-        stagger: 0.2, // Aplica el efecto escalonado a cada elemento hijo
-        delay: 1.2
-    });
+    
 
     // Crear estrellas
     const numStars = 100;
@@ -76,6 +68,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+        // Animación de entrada de la sección "Sobre Mí" con GSAP
+        gsap.fromTo('.about-me-section .container > *', { opacity: 0, y: 50 }, {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: 'power2.out',
+            stagger: 0.2, // Aplica el efecto escalonado a cada elemento hijo
+            delay: 1.2
+        });
 
         // Animación de entrada para los títulos de sección
         gsap.utils.toArray(".section-title").forEach(title => {
